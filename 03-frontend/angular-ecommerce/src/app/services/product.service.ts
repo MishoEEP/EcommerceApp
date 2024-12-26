@@ -50,29 +50,16 @@ export class ProductService {
    return this.getProducts(searchUrl);
   }
 
-//   searchProductsPaginate(thePage: number,
-//                          thePageSize: number,
-//                          theKeyword: number) : Observable<GetResponeceProducts> {
+  searchProductsPaginate(thePage: number,
+                         thePageSize: number,
+                         theKeyword: string) : Observable<GetResponeceProducts> {
 
-//     //need to build URL based on keyword, page and size
-//     const searchUrl = `${this.baseUrl}/search/findByNameContaining?name=${theKeyword}`
-//                     + `&page=${thePage}&size=${thePageSize}`;
+    //need to build URL based on keyword, page and size
+    const searchUrl = `${this.baseUrl}/search/findByNameContaining?name=${theKeyword}`
+                    + `&page=${thePage}&size=${thePageSize}`;
 
-//     return this.httpClient.get<GetResponeceProducts>(searchUrl);
-// }
-
-searchProductsPaginate(thePage: number,
-  thePageSize: number,
-  theKeyword: string): Observable<GetResponeceProducts> {
-
-// need to build URL based on keyword, page and size
-const searchUrl = `${this.baseUrl}/search/findByNameContaining?name=${theKeyword}`
-+ `&page=${thePage}&size=${thePageSize}`;
-
-return this.httpClient.get<GetResponeceProducts>(searchUrl);
+    return this.httpClient.get<GetResponeceProducts>(searchUrl);
 }
-
-
 
   private getProducts(searchUrl: string): Observable<Product[]> {
     return this.httpClient.get<GetResponeceProducts>(searchUrl).pipe(
