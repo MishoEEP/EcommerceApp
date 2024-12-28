@@ -515,7 +515,7 @@ input.au-input.au-input-xl{
   background:#fff
 }
 .main-content.page-m{
-  padding:10% 15%!important
+  padding:10% 30% 10% 5%
 }
 
 /*
@@ -674,6 +674,17 @@ select{
   color:#828482
 }
 
+/* Add margin to the checkbox to separate it from the content below */
+.form-check {
+  margin-bottom: 30px; /* Adjust this value based on your needs */
+}
+
+/* Add padding or margin to the form-area to give space between the sections */
+.form-area {
+  margin-top: 30px; /* Adds space between sections, adjust as needed */
+}
+
+
 /*
 * ----------------------------
 * Shopping Cart Details
@@ -736,6 +747,8 @@ table.table.table-bordered th{
 * Buttons
 * ----------------------------
 */
+
+
 
 .btn-info{
   color:#fff;
