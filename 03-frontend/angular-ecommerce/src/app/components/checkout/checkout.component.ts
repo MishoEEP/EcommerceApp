@@ -4,6 +4,7 @@ import { GamergyformService } from '../../services/gamergyform.service';
 import { Country } from '../../common/country';
 import { State } from '../../common/state';
 import { GamergyValidators } from '../../validators/gamergy-validators';
+import { CartService } from '../../services/cart.service';
 
 @Component({
   selector: 'app-checkout',
@@ -23,9 +24,13 @@ export class CheckoutComponent implements OnInit {
   shippingAddressStates: State[] = [];
   billingAddressStates: State[] = [];
   constructor(private formBuilder: FormBuilder,
-              private gamergyFormService: GamergyformService) { }
+              private gamergyFormService: GamergyformService,
+
+              private cartService: CartService) { }
 
   ngOnInit(): void {
+
+    this.reviewCartDetails();
 
     this.checkoutFormGroup = this.formBuilder.group({
       customer: this.formBuilder.group({
@@ -91,6 +96,20 @@ export class CheckoutComponent implements OnInit {
     );
 
   }
+  reviewCartDetails() {
+
+    // subscribe to cartService.totalQuantity
+    this.cartService.totalQuantity.subscribe(
+      totalQuantity => this.totalQuantity = totalQuantity
+    );
+
+    // subscribe to cartService.totalPrice
+    this.cartService.totalPrice.subscribe(
+      totalPrice => this.totalPrice = totalPrice
+    );
+
+  }
+
 
   get firstName() { return this.checkoutFormGroup.get('customer.firstName'); }
   get lastName() { return this.checkoutFormGroup.get('customer.lastName'); }
