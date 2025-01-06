@@ -3,7 +3,7 @@
   --button_radius: 0.75em;
   --button_color: #e8e8e8;
   --button_outline_color: #000000;
-  font-size: 17px;
+  font-size: 12px;
   font-weight: bold;
   border: none;
   cursor: pointer;
@@ -30,3 +30,7 @@
 .au-btn-submit:active .button_top {
   transform: translateY(0);
 }
+
+/* .form-header {
+  background-color: #8c00ff;
+} */
