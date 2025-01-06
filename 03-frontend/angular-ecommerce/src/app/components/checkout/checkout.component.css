@@ -1,4 +1,4 @@
-.checkbox-wrapper input[type="checkbox"] {
+/* .checkbox-wrapper input[type="checkbox"] {
   display: none;
 }
 
@@ -35,4 +35,4 @@
 .checkbox-wrapper input[type="checkbox"]:checked + .terms-label .checkbox-box,
   .checkbox-wrapper input[type="checkbox"]:checked + .terms-label .checkbox-tick {
   stroke-dashoffset: 0;
-}
+} */
