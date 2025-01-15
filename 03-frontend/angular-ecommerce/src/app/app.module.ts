@@ -77,10 +77,13 @@ import { AuthGuard, AuthHttpInterceptor, AuthModule } from '@auth0/auth0-angular
 import myAppConfig from './config/my-app-config';
 import { LoginStatusComponent } from './components/login-status/login-status.component';
 import { AuthInterceptorService } from './services/auth-interceptor.service';
-import { MambersPageComponent } from './components/mambers-page/mambers-page.component';
+import { MembersPageComponent } from './components/members-page/members-page.component';
 
 
 const routes: Routes = [
+
+  // {path: 'order-history', component: OrderHistoryComponent, canActivate: [AuthGuard]},
+  {path: 'members', component: MembersPageComponent,  canActivate: [AuthGuard] },
 
   {path: 'checkout', component: CheckoutComponent},
   {path: 'cart-details', component: CartDetailsComponent},
@@ -104,7 +107,8 @@ const routes: Routes = [
     CartStatusComponent,
     CartDetailsComponent,
     SearchComponent,
-    LoginStatusComponent
+    LoginStatusComponent,
+    MembersPageComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
