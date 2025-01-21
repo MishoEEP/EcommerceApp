@@ -78,12 +78,14 @@ import myAppConfig from './config/my-app-config';
 import { LoginStatusComponent } from './components/login-status/login-status.component';
 import { AuthInterceptorService } from './services/auth-interceptor.service';
 import { MembersPageComponent } from './components/members-page/members-page.component';
+import { OrderHistoryComponent } from './components/order-history/order-history.component';
 
 
 const routes: Routes = [
 
   // {path: 'order-history', component: OrderHistoryComponent, canActivate: [AuthGuard]},
   {path: 'members', component: MembersPageComponent,  canActivate: [AuthGuard] },
+  {path: 'order-history', component: OrderHistoryComponent, canActivate: [AuthGuard]},
 
   {path: 'checkout', component: CheckoutComponent},
   {path: 'cart-details', component: CartDetailsComponent},
@@ -108,7 +110,8 @@ const routes: Routes = [
     CartDetailsComponent,
     SearchComponent,
     LoginStatusComponent,
-    MembersPageComponent
+    MembersPageComponent,
+    OrderHistoryComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
