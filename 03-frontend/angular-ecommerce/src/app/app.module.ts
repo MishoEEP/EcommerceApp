@@ -128,8 +128,7 @@ const routes: Routes = [
       },
     })
   ],
-  providers: [ProductService,  {provide: HTTP_INTERCEPTORS, useClass:
-AuthInterceptorService, multi: true, },],
+  providers: [ProductService,  {provide: HTTP_INTERCEPTORS, useClass: AuthInterceptorService, multi: true, },],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
