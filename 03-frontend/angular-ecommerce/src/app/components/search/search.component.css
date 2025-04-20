@@ -1,8 +1,7 @@
-.au-btn-submit {
-  /* Variables */
+/* .au-btn-submit {
   --button_radius: 0.75em;
-  --button_color: #e8e8e8;
-  --button_outline_color: #000000;
+  --button_color: #fff;
+  --button_outline_color: #8d04c4;
   font-size: 12px;
   font-weight: bold;
   border: none;
@@ -29,10 +28,74 @@
 
 .au-btn-submit:active .button_top {
   transform: translateY(0);
-}
+} */
 
 /* .form-header {
   background-color: #8c00ff;
+}
+
+
+
+/* .input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 18px 16px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+
+.input::placeholder {
+  color: transparent;
+}
+
+.input:focus::placeholder {
+  color: rgb(131, 128, 128);
+}
+
+.input:focus,.input:not(:placeholder-shown) {
+  background-color: #fff;
+  border: 1px solid #8d04c4;
+  width: 290px;
+  cursor: none;
+  padding: 18px 16px 18px 40px;
+}
+
+.icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 40px;
+  width: 40px;
+  background-color: none;
+  border-radius: 10px;
+  z-index: -1;
+  fill: #8d04c4;
+  border: none;
+}
+
+
+.input:hover + .icon {
+  transform: rotate(360deg);
+  transition: .2s ease-in-out;
+}
+
+.input:focus + .icon,.input:not(:placeholder-shown) + .icon {
+  z-index: 0;
+  background-color: transparent;
+  border: none;
 } */
 
-
+button {
+  background: #0da8e4;
+  border: none;
+}

@@ -134,7 +134,7 @@ aside.menu-sidebar.d-none.d-lg-block.clr{
 */
 
 .header-desktop{
-  background:#0da8e4;
+  background:#fff;
   -webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
   -moz-box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
   box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
@@ -213,7 +213,7 @@ section{
   padding:0 30px
 }
 
-.au-input-xl{
+/* .au-input-xl{
   min-width:500px
 }
 
@@ -235,7 +235,40 @@ input.au-input.au-input-xl{
   -o-transition:all .5s ease;
   -moz-transition:all .5s ease;
   transition:all .5s ease
+} */
+
+.au-input-xl{
+  max-width:500px;
 }
+
+input.au-input.au-input-xl{
+  border-radius:40px!important;
+  margin-right:15px;
+  border:1px solid #e5e5e5;
+  box-shadow: 0 0 10px #8d04c4;
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+input.au-input.au-input-xl:focus {
+  box-shadow: 0 0 20px rgba(128, 0, 255, 0.8);
+  outline: none;
+}
+
+.au-input{
+  line-height:43px;
+  border:1px solid #e5e5e5;
+  font-size:14px;
+  color:#666;
+  padding:0 17px;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  border-radius:3px;
+  -webkit-transition:all .5s ease;
+  -o-transition:all .5s ease;
+  -moz-transition:all .5s ease;
+  transition:all .5s ease;
+}
+
 
 .cart-area.d-n{
   display:block
@@ -370,8 +403,9 @@ input.au-input.au-input-xl{
 .navbar-sidebar .navbar-list li a{
   display:block;
   color:#555;
-  font-size:16px;
-  padding:5px 0
+  font-size:20px;
+  padding:5px 0;
+  text-decoration: none;
 }
 
 .navbar-sidebar .navbar-list li a i{

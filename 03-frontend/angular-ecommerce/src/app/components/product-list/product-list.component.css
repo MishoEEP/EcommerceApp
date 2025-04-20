@@ -2,3 +2,77 @@
   background-color: white;
 
 }
+
+/* .btn.btn-primary.btn-sm {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #0da8e4;
+  border: 2px solid #000;
+  border-radius: 8px;
+  box-shadow: 4px 4px 0px #000;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn.btn-primary.btn-sm:hover {
+  background-color: #fff;
+  color:  #8d04c4;
+  border: 2px solid  #8d04c4;
+  box-shadow: 4px 4px 0px  #8d04c4;
+}
+
+.btn.btn-primary.btn-sm:active {
+  background-color: #0da8e4;
+  box-shadow: none;
+  transform: translateY(3px);
+} */
+
+
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  z-index: 1;
+  background:#0da8e4;
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  box-shadow: 2px 4px 12px -3px rgba(0, 0, 0, 0.2);
+  transition: all 250ms;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 10px;
+  background-color: #8d04c4;
+  z-index: -1;
+  box-shadow: 2px 4px 12px -3px rgba(0, 0, 0, 0.2);
+  transition: all 250ms;
+}
+
+button:hover {
+  color: #f0f0f0;
+}
+
+button:hover::before {
+  width: 100%;
+}
+
+
+
+
+

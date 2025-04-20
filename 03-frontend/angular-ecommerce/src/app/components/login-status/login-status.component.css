@@ -8,12 +8,17 @@
     right:0;
     min-width:95px;
     color:#fff;
-    border:10px solid #205b8d;
+    border:10px solid #0da8e4;
     -webkit-border-radius:3px;
     -moz-border-radius:3px;
     border-radius:43px;
-    background:#205b8d;
+    background:#0da8e4;
     margin-right: 10px;
+}
+
+.security-btn:hover {
+  background: #05143f;
+  border-color: #05143f; /* Menja boju bordera da se uklopi sa pozadinom */
 }
 
 /*

@@ -1,0 +1,68 @@
+/* Plus i Minus dugmadi */
+button.btn-sm {
+  border: 1px solid #d3d3d3; /* svetlo sivi okvir */
+  background-color: #f5f5f5; /* svetlo siva pozadina */
+  color: #000; /* crna slova */
+  padding: 3px 8px; /* manji padding */
+  border-radius: 5px;
+  font-size: 12px; /* manja veličina fonta */
+  transition: all 0.3s ease;
+}
+
+/* Specifični stil za ikone unutar Plus i Minus dugmadi */
+button.btn-sm i {
+  font-size: 16px; /* manja veličina ikona */
+}
+
+/* Hover efekat za Plus i Minus dugmadi */
+button.btn-sm:hover {
+  background-color: #e0e0e0; /* promena pozadine na sivo pri hoveru */
+  border-color: #b3b3b3; /* tamniji sivi okvir pri hoveru */
+  color: #000; /* crna slova */
+}
+
+/* Boja border-a kada se dugme pritisne */
+button.btn-sm:active {
+  border-color: #8d04c4; /* promenite ovo na željenu boju */
+  background-color: #e0e0e0; /* opcionalno, možete promeniti pozadinu kad je dugme pritisnuto */
+}
+
+/* Remove dugme */
+button.btn-sm.mt-2 {
+  border: 1px solid #d3d3d3;  /* svetlo sivi okvir */
+  background-color: #f5f5f5; /* svetlo siva pozadina */
+  color: #000; /* crna slova */
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+/* Hover efekat za Remove dugme */
+button.btn-sm.mt-2:hover {
+  background-color: #8d04c4; /* promena pozadine na sivo pri hoveru */
+  border-color: #b3b3b3; /* tamniji sivi okvir pri hoveru */
+  color: #000; /* crna slova */
+}
+
+/* Dodavanje stila za hover sa glatkim prelazima */
+button.btn-sm:active, button.btn-sm.mt-2:active {
+  transform: scale(0.88); /* lagani efekat smanjenja dugmeta prilikom klika */
+}
+
+.btn-primary.checkout {
+  position:relative;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  color:#fff;
+  border:10px solid #0da8e4;
+  background:#0da8e4;
+}
+
+.btn-primary.checkout:hover {
+background: #05143f;
+border-color: #05143f; /* Menja boju bordera da se uklopi sa pozadinom */
+}
+
+

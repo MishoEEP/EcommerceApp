@@ -1,3 +1,82 @@
 .detail-section {
   background-color: white;
 }
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  z-index: 1;
+  background:#0da8e4;
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  box-shadow: 2px 4px 12px -3px rgba(0, 0, 0, 0.2);
+  transition: all 250ms;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 10px;
+  background-color: #8d04c4;
+  z-index: -1;
+  box-shadow: 2px 4px 12px -3px rgba(0, 0, 0, 0.2);
+  transition: all 250ms;
+}
+
+button:hover {
+  color: #f0f0f0;
+}
+
+button:hover::before {
+  width: 100%;
+}
+
+a.mt-5 {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  background: #0da8e4;
+  font-weight: 500;
+  font-size: 13px;
+  text-align: center;
+  box-shadow: 2px 4px 12px -3px rgba(0, 0, 0, 0.2);
+  transition: all 250ms;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+a.mt-5::before {
+  content: "←";
+  font-size: 16px;
+  margin-right: 6px;
+  color: white;
+  transition: all 250ms;
+}
+
+a.mt-5:hover {
+  color: #f0f0f0;
+  background: #8d04c4;
+}
+
+a.mt-5:hover::before {
+  color: #f0f0f0;
+}
+
+a.mt-5:active {
+  box-shadow: inset 2px 4px 12px -3px rgba(0, 0, 0, 0.2);
+}
